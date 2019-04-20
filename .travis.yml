@@ -20,10 +20,10 @@ before_script:
   - cd ../
   - mv ansible-role-toolkit daixijun.toolkit
   - cd daixijun.toolkit
+  - ansible-galaxy install -r requirements.yml --roles-path=../roles
 
 install:
   - pip install ansible molecule docker
-  - ansible-galaxy install -r requirements.yml
 
 script:
   - molecule test
