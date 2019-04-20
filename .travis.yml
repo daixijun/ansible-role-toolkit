@@ -23,7 +23,7 @@ before_script:
 
 install:
   - pip install ansible molecule docker
-  - ansible-galaxy install -r requirements.yaml
+  - ansible-galaxy install -r requirements.yml
 
 script:
   - molecule test
