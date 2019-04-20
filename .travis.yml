@@ -18,8 +18,8 @@ services:
 
 before_script:
   - cd ../
-  - mv ansible-role-tookit daixijun.tookit
-  - cd daixijun.tookit
+  - mv ansible-role-toolkit daixijun.toolkit
+  - cd daixijun.toolkit
 
 install:
   - pip install ansible molecule docker
