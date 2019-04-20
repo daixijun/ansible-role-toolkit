@@ -43,4 +43,23 @@ __common_packages:
     - libexpat1-dev
     - gettext
     - libz-dev
+  Debian:
+    - wget
+    - ntp
+    - vim
+    - lsof
+    - iftop
+    - ngrep
+    - htop
+    - libssl-dev
+    - unzip
+    - telnet
+    - netcat
+    - ntpdate
+    - tree
+    - curl
+    - libcurl4-gnutls-dev
+    - libexpat1-dev
+    - gettext
+    - libz-dev
 common_packages: "{{ __common_packages[ansible_distribution] }}"
