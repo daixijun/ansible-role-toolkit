@@ -20,7 +20,7 @@ before_script:
   - cd ../
   - mv ansible-role-toolkit daixijun.toolkit
   - cd daixijun.toolkit
-  - ansible-galaxy install -r requirements.yml --roles-path=../roles
+  - ansible-galaxy install -r requirements.yml --roles-path=../
 
 install:
   - pip install ansible molecule docker
