@@ -1,6 +1,6 @@
 ---
 __common_packages:
-  CentOS:
+  RedHat:
     - vim
     - ntp
     - wget
@@ -23,26 +23,7 @@ __common_packages:
     - gettext-devel
     - yum-utils
     - nethogs
-    - iperf3
-  Ubuntu:
-    - wget
-    - ntp
-    - vim
-    - lsof
-    - iftop
-    - ngrep
-    - htop
-    - libssl-dev
-    - unzip
-    - telnet
-    - netcat
-    - ntpdate
-    - tree
-    - curl
-    - libcurl4-gnutls-dev
-    - libexpat1-dev
-    - gettext
-    - libz-dev
+    - iptraf
   Debian:
     - wget
     - ntp
@@ -62,4 +43,5 @@ __common_packages:
     - libexpat1-dev
     - gettext
     - libz-dev
-common_packages: "{{ __common_packages[ansible_distribution] }}"
+    - iptraf
+common_packages: "{{ __common_packages[ansible_os_family] | default(__common_packages[ansible_distribution]) }}"
