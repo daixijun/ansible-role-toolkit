@@ -1,6 +1,6 @@
 ---
 # tasks file for daixijun.toolkit
-- name: 安装常用工具
+- name: Install common tools
   package:
     name: "{{ common_packages }}"
     update_cache: yes
