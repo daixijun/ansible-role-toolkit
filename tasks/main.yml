@@ -5,3 +5,14 @@
     name: "{{ common_packages }}"
     update_cache: yes
     state: present
+  register: toolkit_install_tools
+  async: 300
+  poll: 0
+  changed_when: False
+
+- name: Wait for install complete
+  async_status:
+    jid: "{{ toolkit_install_tools.ansible_job_id }}"
+  register: toolkit_install_tools_status
+  until: toolkit_install_tools_status.finished
+  retries: 300
