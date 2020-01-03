@@ -1,3 +1,28 @@
 ---
 # defaults file for daixijun.toolkit
-packages: []  # 软件包列表
+common_packages:
+  - vim
+  - ntp
+  - wget
+  - lsof
+  - iftop
+  - ngrep
+  - htop
+  - openssl
+  - openssl-devel
+  - unzip
+  - telnet
+  - nc
+  - ntpdate
+  - tree
+  - yum-utils
+  - curl
+  - libcurl-devel
+  - zlib-devel
+  - expat-devel
+  - gettext-devel
+  - yum-utils
+  - nethogs
+  - iptraf
+# 自定义软件列表
+packages: []

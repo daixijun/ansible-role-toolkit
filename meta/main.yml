@@ -48,14 +48,7 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - 6
         - 7
-    - name: Debian
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
 
   galaxy_tags: []
   # List tags for your role here, one per line. A tag is a keyword that describes
