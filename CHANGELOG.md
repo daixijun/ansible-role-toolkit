@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/daixijun/ansible-role-toolkit/compare/v0.1.1...v0.1.2) (2020-04-21)
+
+
+### Bug Fixes
+
+* 将自定义安装包列表与默认列表整合 ([f6b9e5b](https://github.com/daixijun/ansible-role-toolkit/commit/f6b9e5b4e5629b8185140a0d392d1430e96559ce))
+* 移除部分默认包 ([43617d0](https://github.com/daixijun/ansible-role-toolkit/commit/43617d0db975cd1db6a62fde009d7d1b81dd5c69))
+
 ### [0.1.1](https://github.com/daixijun/ansible-role-toolkit/compare/v0.1.0...v0.1.1) (2020-01-03)
 
 
