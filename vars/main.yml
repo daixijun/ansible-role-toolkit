@@ -1,0 +1,20 @@
+---
+toolkit_common_packages:
+  - wget
+  - lsof
+  - iftop
+  - ngrep
+  - htop
+  - openssl
+  - unzip
+  - telnet
+  - nc
+  - tree
+  - curl
+  - nethogs
+  - iptraf
+  # - yum-utils
+  # - libcurl-devel
+  # - zlib-devel
+  # - expat-devel
+  # - gettext-devel
