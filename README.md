@@ -1,48 +1,39 @@
-Role Name
-=========
+# daixijun.toolkit
 
-A brief description of the role goes here.
+[![Build Status](https://github.com/daixijun/ansible-role-toolkit/workflows/build/badge.svg)](https://github.com/daixijun/ansible-role-toolkit/actions)
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-daixijun.toolkit-660198.svg?style=flat)](https://galaxy.ansible.com/daixijun/ansible-role-toolkit/)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/daixijun/ansible-role-toolkit?sort=semver)](https://github.com/daixijun/ansible-role-toolkit/tags)
 
-Requirements
-------------
+安装常用的工具包，默认安装的[软件包列表](./vars/main.yml)
 
-Any pre-requisites that may not be covered by Ansible itself or the role should
-be mentioned here. For instance, if the role uses the EC2 module, it may be a
-good idea to mention in this section that the boto package is required.
+## 环境要求
 
-Role Variables
---------------
+- RHEL/CentOS 6 及以上版本
+- ansible 2.7 及以上版本
 
-A description of the settable variables for this role should go here, including
-any variables that are in defaults/main.yml, vars/main.yml, and any variables
-that can/should be set via parameters to the role. Any variables that are read
-from other roles and/or the global scope (ie. hostvars, group vars, etc.) should
-be mentioned here as well.
+## 变量
 
-Dependencies
-------------
+```yaml
+# 需要额外安装的软件包列表
+toolkit_packages: []
+```
 
-A list of other roles hosted on Galaxy should go here, plus any details in
-regards to parameters that may need to be set for other roles, or variables that
-are used from other roles.
+## 依赖
 
-Example Playbook
-----------------
+无
 
-Including an example of how to use your role (for instance, with variables
-passed in as parameters) is always nice for users too:
+## 使用示例
 
-    - hosts: servers
-      roles:
-         - { role: daixijun.toolkit, x: 42 }
+```yaml
+- hosts: servers
+  roles:
+      - { role: daixijun.toolkit, toolkit_packages: ['vim'] }
+```
 
-License
--------
+## License
 
 BSD
 
-Author Information
-------------------
+## 维护者
 
-An optional section for the role authors to include contact information, or a
-website (HTML is not allowed).
+- Xijun Dai <daixijun1990@gmail.com>
