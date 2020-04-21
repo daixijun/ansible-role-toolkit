@@ -2,7 +2,7 @@
 # tasks file for daixijun.toolkit
 - name: Install common tools
   package:
-    name: "{{ common_packages }}"
+    name: "{{ toolkit_common_packages | union(toolkit_packages) }}"
     update_cache: yes
     state: present
   register: toolkit_install_tools
@@ -15,4 +15,4 @@
     jid: "{{ toolkit_install_tools.ansible_job_id }}"
   register: toolkit_install_tools_status
   until: toolkit_install_tools_status.finished
-  retries: 300
+  retries: 60
