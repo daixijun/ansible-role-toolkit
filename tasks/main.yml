@@ -9,6 +9,8 @@
   async: 300
   poll: 0
   changed_when: False
+  when:
+    - not ansible_check_mode
 
 - name: Wait for install complete
   async_status:
@@ -16,3 +18,5 @@
   register: toolkit_install_tools_status
   until: toolkit_install_tools_status.finished
   retries: 60
+  when:
+    - not ansible_check_mode
