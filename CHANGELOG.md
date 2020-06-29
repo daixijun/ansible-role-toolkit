@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/daixijun/ansible-role-toolkit/compare/v0.1.2...v0.1.3) (2020-06-29)
+
+
+### Bug Fixes
+
+* 兼容 check_mode 模式 ([706dcdc](https://github.com/daixijun/ansible-role-toolkit/commit/706dcdc9dcd806332320e02dbaf7e216f7c4700f))
+
 ### [0.1.2](https://github.com/daixijun/ansible-role-toolkit/compare/v0.1.1...v0.1.2) (2020-04-21)
 
 
